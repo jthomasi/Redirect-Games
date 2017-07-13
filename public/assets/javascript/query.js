@@ -102,13 +102,15 @@ function queryYouTubeAPI() {
     	topic: 'video',
     	chart: 'mostPopular',
     	videoCategoryId: '20',
-    	key: 'AIzaSyCWP7w3wbrme2rce0WF5HzI6NejaY8itss', 
+    	key: 'AIzaSyAqklXzHz631EsXA4-7YQQ2ys_IJ9pENSs', 
     	part: 'snippet',
     	relevanceLanguage: 'en'
 	};
 
 	var query = $.param(params);
 	var queryURL = (baseURL + query);
+
+	console.log(queryURL);
 
 	$.ajax({
 		url: queryURL,
